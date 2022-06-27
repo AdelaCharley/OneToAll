@@ -1,0 +1,11 @@
+include ':glide',  ':tiui'
+rootProject.name='OneToAll'
+include ':app', ':ucrop', ':picture_library'
+include ':LiteAVSDK_Professional'
+
+include ':beauty'
+include ':ugckit'
+include ':SVGAPlayer'
+include ':lib_tcsuperplayer'
+include ':tuikit2'
+include ':nasinet'

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/live_push_bg"
+    android:orientation="vertical">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/pusher_tx_cloud_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/camera_iv_2"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/select_camera_icon" />
+
+        <ImageView
+            android:id="@+id/beauty_iv_2"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/camera_iv_2"
+            android:src="@mipmap/beauty_icon" />
+
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/beauty_iv_2"
+            android:src="@mipmap/share_live" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_share"
+            android:src="@mipmap/ic_live_more" />
+
+
+        <ImageView
+            android:id="@+id/close_iv_2"
+            android:layout_width="@dimen/dp_37"
+
+            android:layout_height="@dimen/dp_37"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_15"
+
+            android:src="@mipmap/round_close_icon" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_15"
+        android:src="@mipmap/round_close_icon" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@drawable/send_text_tips_transparent_bg3"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/camera_iv"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="33dp"
+        android:src="@mipmap/select_camera_icon" />
+
+    <ImageView
+        android:id="@+id/beauty_iv"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="33dp"
+        android:src="@mipmap/beauty_icon" />
+
+    <LinearLayout
+        android:id="@+id/live_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="208dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cover_iv"
+            android:layout_width="@dimen/dp_105"
+            android:layout_height="@dimen/dp_105"
+            android:src="@mipmap/cover_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Live_title"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.5dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/Write_a_live_title"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/channel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@mipmap/channel_more_icon"
+            android:drawablePadding="11dp"
+            android:text="@string/Category"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_room_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_translucent1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_normal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.nasinet.live.widget.DrawableTextView
+                android:id="@+id/dtv_normal"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/Normal"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                app:dt_top_drawable="@mipmap/putong"
+                app:dt_top_height="@dimen/dp_30"
+                app:dt_top_width="@dimen/dp_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.nasinet.live.widget.DrawableTextView
+                android:id="@+id/dtv_price"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/Paid"
+                android:textColor="#fff"
+
+                android:textSize="13sp"
+                app:dt_top_drawable="@mipmap/fufei"
+                app:dt_top_height="@dimen/dp_30"
+                app:dt_top_width="@dimen/dp_30" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_secret"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.nasinet.live.widget.DrawableTextView
+                android:id="@+id/dtv_secret"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/Password"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                app:dt_top_drawable="@mipmap/simi"
+                app:dt_top_height="@dimen/dp_30"
+                app:dt_top_width="@dimen/dp_30" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/filter_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_translucent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/meiyan_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42.5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.5dp"
+                        android:text="@string/Dermabrasion"
+                        android:textColor="@color/color_FEFEFE"
+                        android:textSize="13sp" />
+
+                    <SeekBar
+                        android:id="@+id/mopi_seek_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="9"
+                        android:maxHeight="3.4dp"
+                        android:minHeight="3.4dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:progress="8"
+                        android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                    <TextView
+                        android:id="@+id/mopi_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="15.5dp"
+                        android:text="8"
+                        android:textColor="@color/color_FEFEFE"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32.5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.5dp"
+                        android:text="@string/White"
+                        android:textColor="@color/color_FEFEFE"
+                        android:textSize="13sp" />
+
+                    <SeekBar
+                        android:id="@+id/meibai_seek_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="9"
+                        android:maxHeight="3.4dp"
+                        android:minHeight="3.4dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:progress="5"
+                        android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                    <TextView
+                        android:id="@+id/meibai_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="15.5dp"
+                        android:text="5"
+                        android:textColor="@color/color_FEFEFE"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32.5dp"
+                    android:layout_marginBottom="27dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.5dp"
+                        android:text="@string/Ruddy"
+                        android:textColor="@color/color_FEFEFE"
+                        android:textSize="13sp" />
+
+                    <SeekBar
+                        android:id="@+id/hongrun_seek_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="9"
+                        android:maxHeight="3.4dp"
+                        android:minHeight="3.4dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:progress="3"
+                        android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                    <TextView
+                        android:id="@+id/hongrun_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="15.5dp"
+                        android:text="3"
+                        android:textColor="@color/color_FEFEFE"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27.5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/filter_seek_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="47.5dp"
+                    android:layout_marginRight="47.5dp"
+                    android:layout_marginBottom="37.5dp"
+                    android:max="10"
+                    android:maxHeight="3.4dp"
+                    android:minHeight="3.4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                <com.tencent.liteav.demo.play.view.HorizontalListView
+                    android:id="@+id/filter_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="12.5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/meiyan_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/meiyan_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Face"
+                        android:textColor="@color/color_F06E1E"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:id="@+id/meiyan_view"
+                        android:layout_width="12dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8.5dp"
+                        android:background="@drawable/login_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filter_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/filter_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Filter"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:id="@+id/filter_view"
+                        android:layout_width="12dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8.5dp"
+                        android:background="@drawable/login_bg"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--    聊天&礼物-->
+    <LinearLayout
+        android:id="@+id/chat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/rl_bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:overScrollMode="never" />
+
+
+    </LinearLayout>
+
+
+    <!--    主播名称&热度-->
+    <LinearLayout
+        android:id="@+id/anchor_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12.5dp"
+            android:background="@drawable/send_text_transparent_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/head_iv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3.5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="5.5dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hot_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_marginBottom="5.5dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!---->
+        <RelativeLayout
+            android:id="@+id/rl_peoples"
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_27"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/send_text_transparent_bg_white">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_people" />
+
+            <TextView
+                android:id="@+id/tv_peoples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="13dp"
+                android:layout_toRightOf="@id/iv_1"
+                android:text="0"
+                android:textColor="@color/color_theme"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_27"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/send_text_transparent_bg"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/Income_diamond"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_income_dimen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="10dp"
+
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_theme"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/send_text_transparent_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:src="@mipmap/ic_more_white" />
+
+            <TextView
+                android:id="@+id/contribution_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="center"
+                android:text="@string/Contribution_list"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/group_1"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@mipmap/icon_live_gift_anim_3"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_live_gift_3" />
+
+        <TextView
+            android:id="@+id/tv_gift_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/avatar"
+            android:background="@mipmap/icon_live_gift_anim_4"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/start_live_tv"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_40"
+        android:layout_above="@id/ll_room_type"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_120"
+        android:background="@drawable/shape_corner_theme_25"
+        android:gravity="center"
+        android:text="@string/Start"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_room"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_200"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/iv_1"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            android:src="@mipmap/room" />
+
+        <com.nasinet.live.widget.DrawableTextView
+            android:id="@+id/dtv_room_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/Room_type"
+            android:textColor="#fff"
+            android:textSize="15sp"
+
+            />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_join"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_170"
+        android:layout_below="@id/rl_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@color/white"
+        app:cardCornerRadius="5dp"
+        android:visibility="gone"
+        app:cardElevation="0dp">
+
+
+        <com.tencent.liteav.demo.play.SuperPlayerView
+            android:id="@+id/txcv_join"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_stop_join"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:background="@mipmap/join_close" />
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

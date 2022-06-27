@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="86dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/gift_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal">
+        </ImageView>
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorC9C9C9"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="香蕉"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorYellow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.5dp"
+            android:textSize="12sp"
+            android:text="30"
+            android:drawableRight="@drawable/gold_ic"
+            android:layout_marginBottom="4.5dp"
+            android:drawablePadding="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>

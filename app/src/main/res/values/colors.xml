@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3FA862</color>
+    <color name="colorPrimaryDark">#3FA862</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="room">#E08900</color>
+    <color name="read_dot_bg">#f74c31</color>
+    <color name="color_F4F4F4">#F4F4F4</color>
+    <color name="color_F06E1E">#F06E1E</color>
+    <color name="color_E1E1E1">#E1E1E1</color>
+    <color name="color_939393">#939393</color>
+    <color name="color_c1bfbf">#c1bfbf</color>
+    <color name="color_6F6F6F">#6F6F6F</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_222222">#222222</color>
+    <color name="colorTransparent_15">#D9ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_translucent">#80000000</color>
+    <color name="color_translucent1">#30000000</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_F4F7FF">#F4F7FF</color>
+    <color name="color_D4D3D3">#D4D3D3</color>
+    <color name="gray3">#c8c8c8</color>
+    <color name="global">#ffd019</color>
+    <color name="global2">#7014E2</color>
+    <color name="color_FFCE37">#FFCE37</color>
+    <color name="color_929292">#929292</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_FF8A43">#FF8A43</color>
+    <color name="color_FEFEFE">#FEFEFE</color>
+    <color name="color_FFFFFF">#ffffff</color>
+    <color name="color_40ACFF">#40ACFF</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_FF961B">#FF961B</color>
+    <color name="color_FF1B1B">#FF1B1B</color>
+    <color name="color_B3B3B3">#B3B3B3</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="color_FFD156">#FFD156</color>
+    <color name="color_71CFFF">#71CFFF</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_FFF0E7">#FFF0E7</color>
+    <color name="color_FFF728">#FFF728</color>
+    <color name="color_fff0f9ff">#fff0f9ff</color>
+    <color name="color_6ECAFF">#6ECAFF</color>
+    <color name="color_747474">#747474</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_FFD7D7">#FFD7D7</color>
+    <color name="color_E42C2C">#E42C2C</color>
+    <color name="color_6ABEFF">#6ABEFF</color>
+    <color name="color_F0F9FF">#F0F9FF</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_74C0FF">#74C0FF</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="color_A2A2A2">#A2A2A2</color>
+    <color name="color_FFE0E0">#FFE0E0</color>
+    <color name="color_FF8B02">#FF8B02</color>
+    <color name="color_E89EFF">#E89EFF</color>
+    <color name="color_151723">#151723</color>
+    <color name="color_313343">#313343</color>
+
+
+
+    <color name="color_5B5B5B">#5B5B5B</color>
+
+    <color name="color_BB05FE">#BB05FE</color>
+    <color name="color_circle">#FF0505</color>
+    <color name="color_9C9C9C">#9C9C9C</color>
+    <color name="color_DADADA">#DADADA</color>
+    <color name="color_5FFCFF">#5FFCFF</color>
+    <color name="color_theme">#FF612C</color>
+    <color name="color_a2e0fe">#a2e0fe</color>
+    <color name="bga_pp_btn_confirm_enabled">#FF612C</color>
+    <color name="bga_pp_btn_confirm_pressed">#FF612C</color>
+    <color name="color_FF6273">#FF6273</color>
+    <color name="color_F6F5F5">#F6F5F5</color>
+    <color name="color_lvie_dialog">#f6f7f9</color>
+    <color name="color_message"> #8be8ff</color>
+
+
+    <color name="bga_pp_btn_confirm_disabled">@android:color/transparent</color>
+    <color name="color_ffeeeeee">#ffeeeeee</color>
+    <!-- 18 图半透明黑色蒙层 -->
+    <color name="bga_pp_eighteen_maskColor">#00000000</color>
+</resources>
