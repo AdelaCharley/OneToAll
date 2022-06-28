@@ -21,7 +21,6 @@ import com.nasinet.live.video.TCVideoRecordActivity;
 import com.nasinet.nasinet.utils.AppManager;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
-
 public class CommentHomeBottomList extends BottomPopupView {
 
     LinearLayout ll_list;
