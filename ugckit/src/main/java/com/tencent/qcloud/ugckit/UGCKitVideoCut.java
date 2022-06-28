@@ -2,8 +2,8 @@ package com.tencent.qcloud.ugckit;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;

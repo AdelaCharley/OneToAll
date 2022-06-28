@@ -33,7 +33,6 @@ package="com.nasinet.live">
         android:name="com.nasinet.live.ui.act.HomeActivity"
         android:theme="@style/AppTheme2"
         android:screenOrientation="portrait"
-
         android:configChanges="orientation|keyboardHidden|screenSize">
 
     </activity>

@@ -4,7 +4,6 @@ package com.nasinet.live.bean;
 
 import com.nasinet.live.model.entity.Goods;
 import com.nasinet.live.model.entity.Notify;
-import com.nasinet.live.model.entity.UserRegist;
 import com.tencent.liteav.demo.play.bean.GiftData;
 
 import java.io.Serializable;

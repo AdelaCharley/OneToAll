@@ -2,8 +2,8 @@ package com.nasinet.live.ui.adapter;
 
 import android.content.Context;
 import android.icu.text.DecimalFormat;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +20,7 @@ import com.nasinet.live.util.MyUserInstance;
 
 import java.util.List;
 
-/*import android.support.v7.widget.RecyclerView;*/
+/*import androidx.recyclerview.widget.RecyclerView*/
 
 public class TopicAdapter extends BaseQuickAdapter<Topic, BaseViewHolder> {
     private OnItemClickListener onItemClickListener;

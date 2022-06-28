@@ -3,7 +3,7 @@ package com.nasinet.live.widget.listvideo;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Pair;
@@ -13,7 +13,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.danikula.videocache.HttpProxyCacheServer;
 

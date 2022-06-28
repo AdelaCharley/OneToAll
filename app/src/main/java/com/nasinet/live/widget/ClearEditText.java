@@ -2,8 +2,11 @@ package com.nasinet.live.widget;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
+
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
+
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -14,11 +17,11 @@ import com.blankj.utilcode.util.ObjectUtils;
 import com.nasinet.live.R;
 
 
-public class ClearEditText extends android.support.v7.widget.AppCompatEditText implements View.OnTouchListener, View.OnFocusChangeListener, TextWatcher {
+public class ClearEditText extends AppCompatEditText implements View.OnTouchListener, View.OnFocusChangeListener, TextWatcher {
 
     private Drawable mClearTextIcon;
-    private OnFocusChangeListener mOnFocusChangeListener;
-    private OnTouchListener mOnTouchListener;
+    private View.OnFocusChangeListener mOnFocusChangeListener;
+    private View.OnTouchListener mOnTouchListener;
 
     private String textNow;
 

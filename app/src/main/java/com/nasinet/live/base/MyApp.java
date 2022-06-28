@@ -4,12 +4,9 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
-import android.view.View;
-
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.mob.MobSDK;
-import com.nasinet.live.ui.act.HomeActivity;
 import com.nasinet.live.ui.act.LoginActivity;
 import com.nasinet.live.util.MyUserInstance;
 import com.nasinet.live.util.ToastUtils;
@@ -19,13 +16,11 @@ import com.orhanobut.hawk.Hawk;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import com.tencent.imsdk.TIMCallBack;
-import com.tencent.imsdk.TIMConversation;
 import com.tencent.imsdk.TIMFriendshipManager;
 import com.tencent.imsdk.TIMGroupEventListener;
 import com.tencent.imsdk.TIMGroupTipsElem;
 import com.tencent.imsdk.TIMLogLevel;
 import com.tencent.imsdk.TIMManager;
-import com.tencent.imsdk.TIMRefreshListener;
 import com.tencent.imsdk.TIMSdkConfig;
 import com.tencent.imsdk.TIMUserConfig;
 import com.tencent.imsdk.TIMUserProfile;
@@ -43,7 +38,6 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.HashMap;
-import java.util.List;
 
 
 public class MyApp extends Application {

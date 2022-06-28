@@ -5,14 +5,14 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 
 import com.example.zhouwei.library.CustomPopWindow;

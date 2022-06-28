@@ -5,16 +5,15 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.alibaba.fastjson.JSON;
 import com.dueeeke.videoplayer.player.VideoViewManager;
@@ -23,16 +22,16 @@ import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpActivity;
 import com.nasinet.live.contract.HomeContract;
 import com.nasinet.live.interfaces.OnGetUnRead;
-import com.nasinet.live.ui.fragment.HomeFragment;
-import com.nasinet.live.util.ToastUtils;
-import com.nasinet.live.widget.CommentHomeBottomList;
-import com.nasinet.live.widget.Dialogs;
 import com.nasinet.live.model.entity.UserRegist;
 import com.nasinet.live.presenter.HomePresenter;
+import com.nasinet.live.ui.fragment.HomeFragment;
 import com.nasinet.live.ui.fragment.HomeShortVideoFragment;
 import com.nasinet.live.ui.fragment.HomeTrendsFragment;
 import com.nasinet.live.ui.fragment.MyFragment;
 import com.nasinet.live.util.MyUserInstance;
+import com.nasinet.live.util.ToastUtils;
+import com.nasinet.live.widget.CommentHomeBottomList;
+import com.nasinet.live.widget.Dialogs;
 import com.nasinet.live.wxapi.WxApiWrapper;
 import com.nasinet.nasinet.utils.AppManager;
 import com.orhanobut.hawk.Hawk;
@@ -44,7 +43,6 @@ import com.tencent.qcloud.tim.uikit.TUIKit;
 import com.tencent.qcloud.tim.uikit.config.CustomFaceConfig;
 import com.tencent.qcloud.tim.uikit.config.GeneralConfig;
 import com.tencent.qcloud.tim.uikit.config.TUIKitConfigs;
-
 
 import java.util.ArrayList;
 import java.util.HashSet;

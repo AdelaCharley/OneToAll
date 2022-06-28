@@ -1,7 +1,7 @@
 package com.nasinet.live.ui.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.bumptech.glide.Glide;
@@ -16,7 +16,7 @@ import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-/*import android.support.v7.widget.RecyclerView;*/
+/*import androidx.recyclerview.widget.RecyclerView*/
 
 public class GuardianListItemAdapter extends BaseMultiItemQuickAdapter<Guardian, BaseViewHolder> {
 

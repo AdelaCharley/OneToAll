@@ -10,10 +10,9 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.View;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -43,6 +42,8 @@ import java.util.Date;
 import java.util.Random;
 
 import static android.graphics.BitmapFactory.decodeResource;
+
+import androidx.appcompat.app.AlertDialog;
 
 public class MyUserInstance {
     private WxPayBuilder wxPayBuilder;
@@ -889,14 +890,17 @@ public class MyUserInstance {
         if (hasToken()) {
             if (null != userInfo) {
                 if (userInfo.getIs_anchor() == null || userInfo.getIs_anchor().equals("0")) {
+                    StringUtil.log("ahaoba");
                     return false;
                 } else {
                     return true;
                 }
             } else {
+                StringUtil.log("anagefa");
                 return false;
             }
         } else {
+            StringUtil.log("zhegefalse");
             return false;
         }
 

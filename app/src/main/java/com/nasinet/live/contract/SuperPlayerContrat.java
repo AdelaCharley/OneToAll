@@ -1,6 +1,6 @@
 package com.nasinet.live.contract;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.nasinet.live.base.BaseView;
 import com.nasinet.live.model.entity.AnchorInfo;

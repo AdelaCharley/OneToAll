@@ -1,10 +1,11 @@
 package com.nasinet.live.base;
 
 import android.annotation.SuppressLint;
-import android.arch.lifecycle.Lifecycle;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Lifecycle;
 
 import com.nasinet.live.presenter.BasePresenter;
 import com.nasinet.nasinet.base.BaseFragment;

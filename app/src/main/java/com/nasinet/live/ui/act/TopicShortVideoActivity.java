@@ -2,41 +2,29 @@ package com.nasinet.live.ui.act;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
-import com.dueeeke.videoplayer.player.VideoViewManager;
-import com.google.gson.internal.LinkedTreeMap;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpActivity;
 import com.nasinet.live.contract.HomeContract;
-import com.nasinet.live.model.entity.Author;
-import com.nasinet.live.model.entity.BaseResponse;
 import com.nasinet.live.model.entity.Topic;
-import com.nasinet.live.model.entity.UserInfo;
 import com.nasinet.live.presenter.HomePresenter;
 import com.nasinet.live.ui.adapter.PersonalCenterAdapter;
 import com.nasinet.live.ui.fragment.ShortVideoListFragment;
-import com.nasinet.live.ui.fragment.UserTrendsFragment;
-import com.nasinet.live.util.MyUserInstance;
 import com.nasinet.live.util.ToastUtils;
-import com.nasinet.live.util.WordUtil;
 import com.nasinet.live.widget.Dialogs;
 import com.nasinet.live.widget.ScaleTransitionPagerTitleView;
 

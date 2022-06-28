@@ -1,12 +1,14 @@
 package com.nasinet.live.ui.act;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.RelativeLayout;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -23,6 +25,8 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.tencent.imsdk.TIMCallBack;
 import com.tencent.imsdk.TIMConversation;
 import com.tencent.imsdk.TIMManager;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;

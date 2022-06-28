@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.design.widget.CoordinatorLayout
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:id="@+id/cl_top"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -28,7 +28,7 @@
                 app:contentScrim="?attr/colorPrimary"
                 app:statusBarScrim="?attr/colorPrimary">
 
-                <android.support.design.widget.AppBarLayout
+                <com.google.android.material.appbar.AppBarLayout
                     android:id="@+id/appBarLayout"
 
                     android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     app:elevation="0dp"
                     app:layout_behavior=".widget.FlingBehavior">
 
-                    <android.support.design.widget.CollapsingToolbarLayout
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
                         android:id="@+id/collapsing_toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
 
                         </LinearLayout>
 
-                        <android.support.v7.widget.Toolbar
+                        <androidx.appcompat.widget.Toolbar
                             android:id="@+id/toolbar"
                             style="@style/ClubToolbar"
                             android:layout_width="match_parent"
@@ -309,12 +309,12 @@
                                 </RelativeLayout>
 
                             </RelativeLayout>
-                        </android.support.v7.widget.Toolbar>
-                    </android.support.design.widget.CollapsingToolbarLayout>
-                </android.support.design.widget.AppBarLayout>
+                        </androidx.appcompat.widget.Toolbar>
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+                </com.google.android.material.appbar.AppBarLayout>
 
 
-                <android.support.v4.view.ViewPager
+                <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewpager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -330,8 +330,10 @@
 
                         app:tabIndicatorColor="#0ED1D6"
                         app:tabMode="scrollable"
-                        app:tabRippleColor="@android:color/transparent"></com.nasinet.live.widget.MyTabLayout>
-                </android.support.v4.view.ViewPager>
+                        app:tabRippleColor="@android:color/transparent">
+
+                    </com.nasinet.live.widget.MyTabLayout>
+                </androidx.viewpager.widget.ViewPager>
 
                 <RelativeLayout
                     android:id="@+id/rl_back2"
@@ -346,7 +348,7 @@
                         android:src="@mipmap/ic_back" />
 
                 </RelativeLayout>
-            </android.support.design.widget.CoordinatorLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
             <RelativeLayout
                 android:id="@+id/material_ll"

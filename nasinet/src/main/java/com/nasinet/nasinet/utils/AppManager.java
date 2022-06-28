@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.SupportActivity;
 import android.util.Log;
 
 
@@ -37,7 +36,7 @@ public class AppManager {
     /**
      * 添加Activity到栈
      */
-    public void addActivity(SupportActivity activity) {
+    public void addActivity(Activity activity) {
         if (activityStack == null) {
             activityStack = new Stack<Activity>();
         }

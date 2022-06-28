@@ -11,7 +11,9 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
+import androidx.appcompat.widget.AppCompatImageView;
+
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -20,7 +22,7 @@ import android.widget.ImageView;
 /**
  * 圆形图片控件
  */
-public class CircleImageView extends android.support.v7.widget.AppCompatImageView {
+public class CircleImageView extends AppCompatImageView {
 
 
     private static final Bitmap.Config BITMAP_CONFIG = Bitmap.Config.ARGB_8888;

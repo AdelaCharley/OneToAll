@@ -46,7 +46,7 @@ MobSDK {
 
 android {
 
-    compileSdkVersion 28
+    compileSdkVersion 29
     buildToolsVersion "28.0.3"
     compileOptions {
         targetCompatibility = "8"
@@ -55,7 +55,7 @@ android {
     defaultConfig {
         applicationId "com.nasinet.live"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 24
         versionName "3.1.1"
 
@@ -65,7 +65,6 @@ android {
 
     }
 
-/*
     buildTypes {
         debug{
             buildConfigField "String", "licenceURL", '""'
@@ -77,10 +76,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField "String", "licenceURL", '""'
             buildConfigField "String", "licenceKey", '""'
-            signingConfig signingConfigs.relesae
+            //signingConfig signingConfigs.relesae
         }
     }
-*/
 
     // 拷贝这段代码起始位置
     sourceSets {
@@ -117,7 +115,7 @@ dependencies {
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
 //butterknife
  //   implementation 'com.jakewharton:butterknife:9.0.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
 
 //okhttp3

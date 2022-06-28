@@ -9,14 +9,17 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Environment;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -103,7 +106,8 @@ public class ShortVideoPublishActivity extends BaseMvpActivity<UpLoadPresenter> 
 
         video_duration = getIntent().getStringExtra(UGCKitConstants.VIDEO_RECORD_DURATION);
         roundedCorners = new RoundedCorners(DipPxUtils.dip2px(this,5));
-        Glide.with(this).applyDefaultRequestOptions(new RequestOptions().bitmapTransform(roundedCorners).centerCrop().diskCacheStrategy(DiskCacheStrategy.ALL)).load(temp_video_temp).into(new SimpleTarget<Drawable>() {
+        Glide.with(this).applyDefaultRequestOptions(new RequestOptions().bitmapTransform(roundedCorners).centerCrop().
+                diskCacheStrategy(DiskCacheStrategy.ALL)).load(temp_video_temp).into(new SimpleTarget<Drawable>() {
             @Override
             public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
                 final Bitmap bitmap = drawableToBitmap(resource);

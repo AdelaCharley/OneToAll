@@ -28,7 +28,6 @@ import com.nasinet.live.model.entity.QCloudData;
 import com.nasinet.live.model.entity.RoomManager;
 import com.nasinet.live.model.entity.ShopItem;
 import com.nasinet.live.model.entity.ShortVideo;
-import com.nasinet.live.model.entity.StartLive;
 import com.nasinet.live.model.entity.Topic;
 import com.nasinet.live.model.entity.Trend;
 import com.nasinet.live.model.entity.UserConfig;
@@ -132,7 +131,7 @@ public interface APIService {
     String GetVipPriceList = "api/vip/getVipPriceList";
     String GetAgentInfo = "api/agent/getAgentInfo";
 
-    String baseUrl = "https:///";//服务地址
+    String baseUrl = "http://nasilive.equnshang.cn/";//服务地址
 
     String TXbaseUrl = "https://liveroom.qcloud.com/weapp/live_room/";
 

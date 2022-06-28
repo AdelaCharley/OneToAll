@@ -1,7 +1,7 @@
 package cn.tillusory.tiui.model;
 
 import android.content.Context;
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 import cn.tillusory.tiui.R;
 

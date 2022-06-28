@@ -2,7 +2,7 @@ package com.tencent.qcloud.ugckit.module.upload.impl;
 
 import android.content.Context;
 import android.os.Handler;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 

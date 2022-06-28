@@ -7,17 +7,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Rect;
-import android.net.http.HttpResponseCache;
 import android.os.Build;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -107,6 +99,7 @@ import com.tencent.rtmp.TXLivePushConfig;
 import com.tencent.rtmp.TXLivePusher;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
 import java.io.IOException;
@@ -122,7 +115,13 @@ import cn.tillusory.sdk.bean.InitStatus;
 import cn.tillusory.sdk.bean.TiRotation;
 import cn.tillusory.tiui.TiPanelLayout;
 
-import static android.support.v4.util.Preconditions.checkNotNull;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 public class SuperPlayerVerticalActivity extends BaseMvpActivity<SuperPlayerPresenter> implements SuperPlayerContrat.View
         , SuperPlayerView.OnSuperPlayerViewCallback, OnSendGiftFinish {

@@ -11,7 +11,7 @@ import android.widget.CompoundButton;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.tencent.imsdk.v2.V2TIMCallback;
 import com.tencent.imsdk.v2.V2TIMGroupInfo;

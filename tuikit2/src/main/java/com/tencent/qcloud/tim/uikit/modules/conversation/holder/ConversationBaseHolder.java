@@ -1,6 +1,6 @@
 package com.tencent.qcloud.tim.uikit.modules.conversation.holder;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListAdapter;

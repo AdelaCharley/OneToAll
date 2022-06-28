@@ -4,11 +4,14 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 
 import com.nasinet.live.R;
 import com.nasinet.live.base.OthrBase2Activity;

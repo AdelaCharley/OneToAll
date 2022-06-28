@@ -1,37 +1,27 @@
 package com.nasinet.live.ui.fragment;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.RelativeLayout;
 
-import com.facebook.drawee.view.SimpleDraweeView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpFragment;
 import com.nasinet.live.contract.HomeContract;
-import com.nasinet.live.model.entity.Banners;
 import com.nasinet.live.model.entity.BaseResponse;
 import com.nasinet.live.model.entity.Guardian;
-import com.nasinet.live.model.entity.Trend;
 import com.nasinet.live.presenter.HomePresenter;
-import com.nasinet.live.ui.act.UserTrendsActivity;
-import com.nasinet.live.ui.act.WebViewActivity;
 import com.nasinet.live.ui.adapter.GuardianListAdapter;
 import com.nasinet.live.ui.adapter.GuardianListItemAdapter;
-import com.nasinet.live.ui.adapter.TrendsAdapter;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
-import com.stx.xhb.xbanner.XBanner;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 

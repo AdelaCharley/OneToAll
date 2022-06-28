@@ -1,6 +1,7 @@
 package com.nasinet.live.util;
 
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.nasinet.live.R;
 import com.nasinet.live.base.Constants;
@@ -52,6 +53,10 @@ public class StringUtil {
             return String.valueOf(num);
         }
         return sDecimalFormat.format(num / 10000d) + "W";
+    }
+
+    public static void log(String log){
+        Log.i("equnshanglogtool", log);
     }
 
     public static String md5(String string) {

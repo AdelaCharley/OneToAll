@@ -1,12 +1,13 @@
 package com.nasinet.live.ui.adapter;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.nasinet.live.R;
 import com.nasinet.live.model.entity.ChatGiftBean;

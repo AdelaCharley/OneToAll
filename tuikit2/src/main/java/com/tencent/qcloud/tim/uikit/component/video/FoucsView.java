@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.tencent.qcloud.tim.uikit.utils.ScreenUtil;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 public class FoucsView extends View {
     private int size;

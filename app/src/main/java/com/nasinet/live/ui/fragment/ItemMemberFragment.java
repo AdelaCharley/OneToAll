@@ -1,10 +1,7 @@
 package com.nasinet.live.ui.fragment;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,20 +9,18 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.alibaba.fastjson.JSONObject;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.bumptech.glide.Glide;
 import com.lxj.xpopup.XPopup;
 import com.lxj.xpopup.interfaces.OnSelectListener;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.Response;
 import com.nasinet.live.R;
 import com.nasinet.live.base.OtherBaseFragment;
-import com.nasinet.live.ui.act.WebViewActivity;
-import com.nasinet.live.util.HttpUtils;
-import com.nasinet.live.util.ToastUtils;
 import com.nasinet.live.model.entity.VipPrice;
-import com.nasinet.live.wxapi.PayCallback;
 import com.nasinet.live.util.MyUserInstance;
+import com.nasinet.live.util.ToastUtils;
+import com.nasinet.live.wxapi.PayCallback;
 
 @SuppressLint("ValidFragment")
 public class ItemMemberFragment extends OtherBaseFragment implements PayCallback {

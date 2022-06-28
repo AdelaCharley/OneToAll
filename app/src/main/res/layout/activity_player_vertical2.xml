@@ -120,7 +120,7 @@
 
     </RelativeLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/atv_ply_v_viewpage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -130,7 +130,7 @@
             android:id="@+id/atv_ply_v_content_ll"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </android.support.v4.view.ViewPager>
+    </androidx.viewpager.widget.ViewPager>
 
     <RelativeLayout
         android:id="@+id/group_1"

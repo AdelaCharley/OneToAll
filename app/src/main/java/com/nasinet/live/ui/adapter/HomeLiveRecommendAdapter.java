@@ -3,10 +3,10 @@ package com.nasinet.live.ui.adapter;
 import android.content.Context;
 import android.icu.text.DecimalFormat;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import  androidx.annotation.RequiresApi;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,7 +24,7 @@ import com.nasinet.live.util.MyUserInstance;
 
 import java.util.List;
 
-/*import android.support.v7.widget.RecyclerView;*/
+/*import androidx.recyclerview.widget.RecyclerView*/
 
 public class HomeLiveRecommendAdapter extends BaseMultiItemQuickAdapter<HotLive, BaseViewHolder> {
     private OnItemClickListener onItemClickListener;

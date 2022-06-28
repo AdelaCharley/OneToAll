@@ -2,8 +2,8 @@ package cn.tillusory.tiui.model;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 
 import cn.tillusory.sdk.bean.TiRockEnum;
 import cn.tillusory.tiui.R;

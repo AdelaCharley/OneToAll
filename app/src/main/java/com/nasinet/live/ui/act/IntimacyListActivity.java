@@ -3,8 +3,9 @@ package com.nasinet.live.ui.act;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.nasinet.live.R;
 import com.nasinet.live.base.OthrBase2Activity;

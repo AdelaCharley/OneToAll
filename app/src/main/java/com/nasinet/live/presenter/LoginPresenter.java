@@ -1,5 +1,7 @@
 package com.nasinet.live.presenter;
 
+import android.util.Log;
+
 import com.nasinet.live.contract.LoginContract;
 import com.nasinet.live.model.LoginModel;
 import com.nasinet.live.model.entity.BaseResponse;
@@ -74,6 +76,7 @@ public class LoginPresenter extends BasePresenter<LoginContract.View> implements
                 }, new Consumer<Throwable>() {
                     @Override
                     public void accept(Throwable throwable) throws Exception {
+                        Log.i("zhangjuntest",throwable.getMessage());
                         mView.onError(throwable);
                         mView.hideLoading();
                     }

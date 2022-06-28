@@ -1,35 +1,18 @@
 package com.nasinet.live.dialog;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.Response;
 import com.nasinet.live.R;
-import com.nasinet.live.bean.MessageData;
 import com.nasinet.live.model.entity.User;
-import com.nasinet.live.model.entity.UserRegist;
-import com.nasinet.live.ui.act.AnchorCenterActivity;
-import com.nasinet.live.ui.act.BuyMemberActivity;
-import com.nasinet.live.ui.act.ChatActivity;
-import com.nasinet.live.ui.act.ReportItemActivity;
-import com.nasinet.live.util.HttpUtils;
-import com.nasinet.live.util.MyUserInstance;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class JoinInfoDialog extends Dialog {

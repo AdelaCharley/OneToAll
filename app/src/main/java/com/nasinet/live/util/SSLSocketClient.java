@@ -1,7 +1,5 @@
 package com.nasinet.live.util;
 
-
-
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 

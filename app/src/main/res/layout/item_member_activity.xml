@@ -51,7 +51,7 @@
         app:tl_tab_space_equal="true"
         app:tl_textsize="18dp" />
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_my_income"
         android:layout_below="@id/tl_my_income"
         android:layout_width="match_parent"

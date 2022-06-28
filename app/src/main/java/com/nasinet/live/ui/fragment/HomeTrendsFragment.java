@@ -1,39 +1,25 @@
 package com.nasinet.live.ui.fragment;
 
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
-import android.support.v4.app.Fragment;
-
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.dueeeke.videoplayer.player.VideoViewManager;
-import com.example.zhouwei.library.CustomPopWindow;
 import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpFragment;
 import com.nasinet.live.contract.HomeContract;
-import com.nasinet.live.ui.act.PublishTrendActivity;
-import com.nasinet.live.util.MyUserInstance;
-import com.nasinet.live.util.ToastUtils;
 import com.nasinet.live.model.entity.LiveCategory;
 import com.nasinet.live.presenter.HomePresenter;
+import com.nasinet.live.ui.act.PublishTrendActivity;
 import com.nasinet.live.ui.adapter.TabFragmentAdapter;
+import com.nasinet.live.util.MyUserInstance;
 import com.nasinet.live.util.WordUtil;
-import com.nasinet.live.video.TCVideoFollowRecordActivity;
-import com.nasinet.live.video.TCVideoTripleScreenActivity;
 import com.nasinet.live.widget.ScaleTransitionPagerTitleView;
 import com.nasinet.nasinet.utils.AppManager;
-import com.tencent.qcloud.ugckit.UGCKitConstants;
-import com.tencent.qcloud.ugckit.utils.BackgroundTasks;
-import com.tencent.qcloud.ugckit.utils.DownloadUtil;
-
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
@@ -45,7 +31,6 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTit
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 

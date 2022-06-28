@@ -4,7 +4,6 @@ package com.nasinet.live.base;
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.app.Dialog;
-import android.arch.lifecycle.Lifecycle;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -14,12 +13,8 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 
-
-import android.os.CountDownTimer;
-import android.os.Handler;
 import android.os.IBinder;
 import android.os.LocaleList;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -27,9 +22,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -37,6 +30,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Lifecycle;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

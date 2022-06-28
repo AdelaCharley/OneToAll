@@ -2,8 +2,8 @@ package com.nasinet.live.ui.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;

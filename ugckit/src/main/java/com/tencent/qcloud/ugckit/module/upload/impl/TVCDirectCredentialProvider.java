@@ -1,6 +1,6 @@
 package com.tencent.qcloud.ugckit.module.upload.impl;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.tencent.qcloud.core.auth.BasicLifecycleCredentialProvider;
 import com.tencent.qcloud.core.auth.QCloudLifecycleCredentials;

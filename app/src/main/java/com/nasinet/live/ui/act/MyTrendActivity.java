@@ -2,10 +2,11 @@ package com.nasinet.live.ui.act;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.dueeeke.videoplayer.player.VideoViewManager;
+import com.google.android.material.tabs.TabLayout;
 import com.nasinet.live.R;
 import com.nasinet.live.base.OthrBase2Activity;
 import com.nasinet.live.ui.adapter.PersonalCenterAdapter;

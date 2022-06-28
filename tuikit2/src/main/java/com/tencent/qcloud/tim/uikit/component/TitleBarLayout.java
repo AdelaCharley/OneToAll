@@ -11,7 +11,7 @@ import com.tencent.qcloud.tim.uikit.R;
 import com.tencent.qcloud.tim.uikit.base.ITitleBarLayout;
 import com.tencent.qcloud.tim.uikit.utils.ScreenUtil;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 
 public class TitleBarLayout extends LinearLayout implements ITitleBarLayout {

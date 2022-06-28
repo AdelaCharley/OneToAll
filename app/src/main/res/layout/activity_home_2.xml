@@ -182,8 +182,8 @@
         android:id="@+id/iv_star"
         android:layout_width="@dimen/dp_55"
         android:layout_height="@dimen/dp_55"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/dp_5"
         android:src="@mipmap/btn_star" />
 

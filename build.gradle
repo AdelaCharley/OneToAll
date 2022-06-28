@@ -36,10 +36,10 @@ task clean(type: Delete) {
 
 // 拷贝这段代码起始位置
 ext {
-    compileSdkVersion = 28
+    compileSdkVersion = 29
     buildToolsVersion = "28.0.3"
     minSdkVersion = 16
-    targetSdkVersion = 23
+    targetSdkVersion = 29
     supportSdkVersion = "26.0.0"
     versionCode = 1
     versionName = "v1.0"

@@ -1,6 +1,6 @@
 package com.tencent.qcloud.ugckit.module.record;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.tencent.liteav.demo.beauty.BeautyParams;
 import com.tencent.rtmp.TXLiveConstants;

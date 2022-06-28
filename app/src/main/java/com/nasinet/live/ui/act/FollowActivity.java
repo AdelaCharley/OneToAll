@@ -2,12 +2,13 @@ package com.nasinet.live.ui.act;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 
 import com.nasinet.live.R;
 import com.nasinet.live.base.OthrBase2Activity;

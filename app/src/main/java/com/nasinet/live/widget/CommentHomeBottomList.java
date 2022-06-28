@@ -1,21 +1,15 @@
 package com.nasinet.live.widget;
 
 import android.Manifest;
-import android.animation.ObjectAnimator;
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
 import com.lxj.xpopup.core.BottomPopupView;
 import com.nasinet.live.R;
 import com.nasinet.live.ui.act.LivePushActivity;
@@ -26,8 +20,6 @@ import com.nasinet.live.video.TCVideoPickerActivity;
 import com.nasinet.live.video.TCVideoRecordActivity;
 import com.nasinet.nasinet.utils.AppManager;
 import com.tbruyelle.rxpermissions2.RxPermissions;
-
-import static com.blankj.utilcode.util.ActivityUtils.startActivity;
 
 
 public class CommentHomeBottomList extends BottomPopupView {
@@ -66,23 +58,20 @@ public class CommentHomeBottomList extends BottomPopupView {
                 if (MyUserInstance.getInstance().visitorIsLogin()) {
                     if (MyUserInstance.getInstance().isAnchor()) {
                         if (!MyUserInstance.getInstance().isFastClick()) {
+                            RxPermissions rxPermissions = new RxPermissions((FragmentActivity) mContext);
+                            rxPermissions.request(Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
+                                    .subscribe(granted -> {
+                                        if (granted) {
+                                            dismiss();
+                                            AppManager.getAppManager().startActivity(LivePushActivity.class);
 
-
-                        RxPermissions rxPermissions = new RxPermissions((FragmentActivity) mContext);
-                        rxPermissions.request(Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
-                                .subscribe(granted -> {
-                                    if (granted) {
-                                        dismiss();
-                                        AppManager.getAppManager().startActivity(LivePushActivity.class);
-
-                                    } else {
-                                        ToastUtils.showT("用户没有授权相机权限,请授权在打开直播");
-                                    }
-                                });
+                                        } else {
+                                            ToastUtils.showT("用户没有授权相机权限,请授权在打开直播");
+                                        }
+                                    });
+                        }
                     } else {
                         ToastUtils.showT("您还不是主播,快快去申请吧");
-
-                    }
                     }
                 }
             }

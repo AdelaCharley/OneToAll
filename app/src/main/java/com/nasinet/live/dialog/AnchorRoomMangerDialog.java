@@ -1,11 +1,12 @@
 package com.nasinet.live.dialog;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

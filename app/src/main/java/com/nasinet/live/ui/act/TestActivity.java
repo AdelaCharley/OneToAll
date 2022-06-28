@@ -5,29 +5,18 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import com.contrarywind.timer.MessageHandler;
+import androidx.annotation.Nullable;
+
 import com.nasinet.live.R;
 import com.nasinet.live.util.MyUserInstance;
-import com.nasinet.live.util.ToastUtils;
 import com.nasinet.live.widget.PkProgressBar;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import pl.droidsonroids.gif.GifDrawable;

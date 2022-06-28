@@ -1,7 +1,8 @@
 package com.nasinet.live.ui.act;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.nasinet.live.R;
 import com.nasinet.live.base.OthrBase2Activity;

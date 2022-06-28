@@ -2,10 +2,9 @@ package com.nasinet.nasinet.userconfig;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.icu.text.DecimalFormat;
-import android.support.v7.app.AlertDialog;
 
+import androidx.appcompat.app.AlertDialog;
 
 import com.nasinet.nasinet.R;
 import com.nasinet.nasinet.base.NasiSDK;
@@ -16,13 +15,12 @@ import com.nasinet.nasinet.utils.AppManager;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 public class UserInstance {
 
  public static UserInstance instance;
-    public AlertDialog.Builder builder;
+    public androidx.appcompat.app.AlertDialog.Builder builder;
 
 
     public static UserInstance getInstance() {

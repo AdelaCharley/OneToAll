@@ -3,15 +3,6 @@ package com.nasinet.live.ui.act;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.TypedValue;
@@ -21,11 +12,20 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+
 import com.alibaba.fastjson.JSONObject;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.dueeeke.videoplayer.player.VideoViewManager;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.tabs.TabLayout;
 import com.gyf.immersionbar.ImmersionBar;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
@@ -46,8 +46,6 @@ import com.nasinet.live.model.entity.PersonalAnchorInfo;
 import com.nasinet.live.model.entity.UserRegist;
 import com.nasinet.live.presenter.HomePresenter;
 import com.nasinet.live.ui.adapter.PersonalCenterAdapter;
-import com.nasinet.live.ui.fragment.ChatFragment;
-import com.nasinet.live.ui.fragment.GridGiftListFragment;
 import com.nasinet.live.ui.fragment.InformationFragment;
 
 import com.nasinet.live.util.HttpUtils;
@@ -57,24 +55,15 @@ import com.nasinet.live.widget.MyTabLayout;
 
 import com.nasinet.live.widget.pagerlayoutmanager.OnViewPagerListener;
 import com.nasinet.live.util.MyUserInstance;
-import com.opensource.svgaplayer.SVGADrawable;
-import com.opensource.svgaplayer.SVGAImageView;
-import com.opensource.svgaplayer.SVGAParser;
-import com.opensource.svgaplayer.SVGAVideoEntity;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.stx.xhb.xbanner.XBanner;
 import com.tencent.liteav.demo.play.bean.GiftData;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.OnClick;

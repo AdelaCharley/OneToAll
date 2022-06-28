@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -37,6 +36,8 @@ import com.nasinet.live.widget.CommentPopup;
 import com.nasinet.nasinet.utils.DipPxUtils;
 
 import static android.content.Context.INPUT_METHOD_SERVICE;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by cxf on 2018/12/3.

@@ -99,7 +99,7 @@
 
     </LinearLayout>
     </RelativeLayout>
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_my_income"
         android:accessibilityTraversalBefore="@id/tl_my_income"
         android:layout_below="@id/rl_top"

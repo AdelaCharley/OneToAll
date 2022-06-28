@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!--androidx.constraintlayout.widget.ConstraintLayout-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!--   /**/导航栏区域-->
-
-    <android.support.design.widget.AppBarLayout
+    <!--com.google.android.material.appbar.AppBarLayout-->
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_130"
         android:background="@drawable/shape_corner_red"
         android:orientation="vertical"
         app:elevation="0dp">
-
-        <android.support.design.widget.CollapsingToolbarLayout
+        <!--com.google.android.material.appbar.CollapsingToolbarLayout-->
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/main.collapsing"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_75"
@@ -100,7 +101,7 @@
             </RelativeLayout>
 
 
-        </android.support.design.widget.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
 
         <RelativeLayout
@@ -129,9 +130,9 @@
         </RelativeLayout>
 
 
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--androidx.viewpager.widget.ViewPager-->
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -139,4 +140,4 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

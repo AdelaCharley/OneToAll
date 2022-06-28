@@ -33,7 +33,7 @@ class SVGADrawable(val videoItem: SVGAVideoEntity, val dynamicItem: SVGADynamicE
 
     private val drawer = SVGACanvasDrawer(videoItem, dynamicItem)
 
-    override fun draw(canvas: Canvas?) {
+    override fun draw(canvas: Canvas) {
         if (cleared) {
             return
         }

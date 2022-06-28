@@ -1,7 +1,8 @@
 package com.nasinet.live.bean;
 
 import android.graphics.Bitmap;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import java.io.Serializable;
 import java.util.ArrayList;

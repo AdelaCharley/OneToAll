@@ -7,10 +7,10 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;

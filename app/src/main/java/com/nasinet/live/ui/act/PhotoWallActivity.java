@@ -4,9 +4,10 @@ import android.Manifest;
 import android.content.Intent;
 import android.os.Environment;
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

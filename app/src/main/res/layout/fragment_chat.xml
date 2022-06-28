@@ -15,7 +15,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/chat_list"
                 android:overScrollMode="never"
                 android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 android:textSize="15sp" />
         </LinearLayout>
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/gift_view_ager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                 android:id="@+id/content_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"></FrameLayout>
-        </android.support.v4.view.ViewPager>
+        </androidx.viewpager.widget.ViewPager>
 
         <RelativeLayout
             android:layout_width="match_parent"

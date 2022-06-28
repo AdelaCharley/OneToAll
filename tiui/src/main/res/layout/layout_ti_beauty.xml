@@ -66,7 +66,7 @@
             android:layout_marginTop="55dp"
             android:background="@color/ti_divider" />
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
