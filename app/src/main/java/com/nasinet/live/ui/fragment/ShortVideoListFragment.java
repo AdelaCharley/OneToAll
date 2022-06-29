@@ -128,7 +128,6 @@ public class ShortVideoListFragment extends BaseMvpFragment<HomePresenter> imple
                 mPresenter.searchShort(page, keyWord);
                 break;
             case 4:
-
                 mPresenter.getMyshort(status, page);
                 break;
             case 5:

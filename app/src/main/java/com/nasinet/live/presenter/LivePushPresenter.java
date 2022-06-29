@@ -15,6 +15,7 @@
  */
 package com.nasinet.live.presenter;
 
+import com.google.gson.Gson;
 import com.nasinet.live.contract.LivePushContrat;
 import com.nasinet.live.model.LivePushModel;
 import com.nasinet.live.model.entity.BaseLiveInfo;
@@ -23,13 +24,11 @@ import com.nasinet.live.model.entity.ContributeRank;
 
 import com.nasinet.live.model.entity.GuardianInfo;
 import com.nasinet.live.model.entity.HotLive;
-import com.nasinet.live.model.entity.Invite;
-import com.nasinet.live.model.entity.MLVBLoginResponse;
 import com.nasinet.live.model.entity.QCloudData;
-import com.nasinet.live.model.entity.StartLive;
 import com.nasinet.live.model.entity.UserRegist;
 import com.nasinet.live.net.RxScheduler;
 import com.nasinet.live.util.MyUserInstance;
+import com.nasinet.live.util.StringUtil;
 import com.tencent.liteav.demo.play.bean.GiftData;
 
 import java.util.ArrayList;
@@ -86,6 +85,16 @@ public class LivePushPresenter extends BasePresenter<LivePushContrat.View> imple
             return;
         }
         //具体实现
+        StringUtil.log("uid:" + MyUserInstance.getInstance().getUserinfo().getId());
+        StringUtil.log("token:" + MyUserInstance.getInstance().getUserinfo().getToken());
+        StringUtil.log("cateid:" + cateid);
+        StringUtil.log("thumb:" + thumb);
+        StringUtil.log("room_type:" + room_type);
+        StringUtil.log("price:" + price);
+        StringUtil.log("pwd:" + pwd);
+        StringUtil.log("title:" + title);
+        StringUtil.log("mlvb_token:" + mlvb_token);
+        StringUtil.log("orientation:" + orientation);
         model.startLive(new FormBody.Builder()
                 .add("uid", MyUserInstance.getInstance().getUserinfo().getId())
                 .add("token", MyUserInstance.getInstance().getUserinfo().getToken())
@@ -101,14 +110,20 @@ public class LivePushPresenter extends BasePresenter<LivePushContrat.View> imple
                 .subscribe(new Consumer<BaseResponse<HotLive>>() {
                     @Override
                     public void accept(BaseResponse<HotLive> bean) throws Exception {
+                        Gson gson = new Gson();
+                        StringUtil.log(gson.toJson(bean));
+                        StringUtil.log(bean.getData().getPull_url());
+                        StringUtil.log(bean.getData().getPush_url());
                         mView.startSuccess(bean.getData());
 
                     }
                 }, new Consumer<Throwable>() {
                     @Override
                     public void accept(Throwable throwable) throws Exception {
+                        StringUtil.log("失败了");
+                        StringUtil.log(throwable.getMessage());
+                        StringUtil.log(throwable.toString());
                         mView.onError(throwable);
-
                     }
                 });
     }

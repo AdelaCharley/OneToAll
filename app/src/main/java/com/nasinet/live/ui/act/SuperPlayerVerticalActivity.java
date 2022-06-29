@@ -1,11 +1,9 @@
 package com.nasinet.live.ui.act;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.CountDownTimer;
@@ -21,6 +19,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.bumptech.glide.Glide;
@@ -28,45 +33,40 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.nasinet.live.BuildConfig;
-import com.nasinet.live.liveroom.MLVBHttpUtils;
-import com.nasinet.live.liveroom.roomutil.http.HttpRequests;
-import com.nasinet.live.liveroom.roomutil.http.HttpResponse;
-import com.nasinet.live.model.entity.Anchor;
-import com.nasinet.live.model.entity.BaseLiveInfo;
-import com.nasinet.live.model.entity.GuardianInfo;
-import com.nasinet.live.model.entity.Notify;
-import com.nasinet.live.model.entity.Pkinfo;
-import com.nasinet.live.ui.fragment.ChatVerticalNothingFragment;
-import com.nasinet.live.util.WordUtil;
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.Response;
+import com.nasinet.live.BuildConfig;
 import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpActivity;
 import com.nasinet.live.bean.Message;
 import com.nasinet.live.bean.MessageData;
 import com.nasinet.live.contract.SuperPlayerContrat;
 import com.nasinet.live.dialog.ChatGiftDialogFragment;
+import com.nasinet.live.dialog.LivePriceDialog;
 import com.nasinet.live.interfaces.OnSendGiftFinish;
+import com.nasinet.live.liveroom.MLVBHttpUtils;
+import com.nasinet.live.liveroom.roomutil.http.HttpRequests;
+import com.nasinet.live.liveroom.roomutil.http.HttpResponse;
+import com.nasinet.live.model.entity.Anchor;
+import com.nasinet.live.model.entity.BaseLiveInfo;
 import com.nasinet.live.model.entity.BaseResponse;
 import com.nasinet.live.model.entity.ChatGiftBean;
 import com.nasinet.live.model.entity.ChatReceiveGiftBean;
 import com.nasinet.live.model.entity.HotLive;
 import com.nasinet.live.model.entity.LiveInfo;
+import com.nasinet.live.model.entity.Notify;
 import com.nasinet.live.model.entity.ShopItem;
 import com.nasinet.live.presenter.SuperPlayerPresenter;
 import com.nasinet.live.ui.adapter.PalyTabFragmentPagerAdapter;
 import com.nasinet.live.ui.fragment.ChatVerticalFragment;
+import com.nasinet.live.ui.fragment.ChatVerticalNothingFragment;
 import com.nasinet.live.ui.uiinterfae.ShowGift;
-import com.nasinet.live.util.DateUtil;
-import com.nasinet.live.util.HttpUtils;
-import com.nasinet.live.dialog.LivePriceDialog;
+import com.nasinet.live.util.MyUserInstance;
+import com.nasinet.live.util.StringUtil;
 import com.nasinet.live.util.ToastUtils;
+import com.nasinet.live.util.WordUtil;
 import com.nasinet.live.widget.DYLoadingView;
 import com.nasinet.live.widget.GiftAnimViewHolder;
-import com.nasinet.live.util.MyUserInstance;
 import com.nasinet.live.widget.PkProgressBar;
 import com.nasinet.nasinet.utils.AppManager;
 import com.nasinet.nasinet.utils.DipPxUtils;
@@ -88,7 +88,6 @@ import com.tencent.imsdk.TIMValueCallBack;
 import com.tencent.imsdk.v2.V2TIMGroupInfoResult;
 import com.tencent.imsdk.v2.V2TIMManager;
 import com.tencent.imsdk.v2.V2TIMValueCallback;
-import com.tencent.liteav.demo.play.SuperPlayerConst;
 import com.tencent.liteav.demo.play.SuperPlayerModel;
 import com.tencent.liteav.demo.play.SuperPlayerView;
 import com.tencent.liteav.demo.play.bean.GiftData;
@@ -101,9 +100,6 @@ import com.tencent.rtmp.TXLivePusher;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -114,14 +110,6 @@ import cn.tillusory.sdk.TiSDKManager;
 import cn.tillusory.sdk.bean.InitStatus;
 import cn.tillusory.sdk.bean.TiRotation;
 import cn.tillusory.tiui.TiPanelLayout;
-
-
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 
 public class SuperPlayerVerticalActivity extends BaseMvpActivity<SuperPlayerPresenter> implements SuperPlayerContrat.View
         , SuperPlayerView.OnSuperPlayerViewCallback, OnSendGiftFinish {
@@ -386,6 +374,8 @@ public class SuperPlayerVerticalActivity extends BaseMvpActivity<SuperPlayerPres
 
     private void initPlayer(HotLive hotLive) {
         //PK或者非PK
+        Gson gson = new Gson();
+        StringUtil.log(gson.toJson(hotLive));
         switch (hotLive.getPk_status()) {
             default:
                 //隐藏副PK舞台
@@ -400,7 +390,10 @@ public class SuperPlayerVerticalActivity extends BaseMvpActivity<SuperPlayerPres
                 ppb_live.setVisibility(View.GONE);
                 //填充播放参数
                 SuperPlayerModel model = new SuperPlayerModel();
-                model.url = hotLive.getPull_url();
+                model.url =
+                        //"https://1300631461.vod2.myqcloud.com/91d46a3bvodcq1300631461/f8d317b25285890811306189847/7bd8s1HplVkA.mp4";
+                        hotLive.getPull_url();
+                StringUtil.log("address   " + hotLive.getPull_url());
                 model.title = hotLive.getTitle();
                 spv_main.playWithModel(model);
                 spv_main.setPlayerViewCallback(this);
@@ -415,7 +408,7 @@ public class SuperPlayerVerticalActivity extends BaseMvpActivity<SuperPlayerPres
 
                     @Override
                     public void videoFail() {
-
+                        StringUtil.log("aaa我失败了");
                     }
                 });
                 break;

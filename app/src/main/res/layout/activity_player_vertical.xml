@@ -61,7 +61,7 @@
 
     </RelativeLayout>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cv_join"
         android:layout_width="@dimen/dp_120"
         android:layout_height="@dimen/dp_170"
@@ -92,7 +92,7 @@
             android:layout_marginTop="@dimen/dp_4"
             android:layout_gravity="right"
             />
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
     <RelativeLayout

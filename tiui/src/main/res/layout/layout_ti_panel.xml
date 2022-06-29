@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent">
-
+    <!--androidx.constraintlayout.widget.ConstraintLayout-->
     <ImageView
         android:id="@+id/tiBeautyIV"
         android:layout_width="34dp"
@@ -74,4 +74,4 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

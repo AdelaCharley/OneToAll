@@ -29,6 +29,7 @@ import com.nasinet.live.ui.fragment.HomeShortVideoFragment;
 import com.nasinet.live.ui.fragment.HomeTrendsFragment;
 import com.nasinet.live.ui.fragment.MyFragment;
 import com.nasinet.live.util.MyUserInstance;
+import com.nasinet.live.util.StringUtil;
 import com.nasinet.live.util.ToastUtils;
 import com.nasinet.live.widget.CommentHomeBottomList;
 import com.nasinet.live.widget.Dialogs;
@@ -92,7 +93,7 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> implements Home
 
     @Override
     protected int getLayoutId() {
-
+        StringUtil.log("homeac");
         return R.layout.activity_home_2;
     }
     @SuppressLint("MissingSuperCall")

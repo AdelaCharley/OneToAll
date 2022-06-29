@@ -44,6 +44,7 @@ import com.nasinet.live.liveroom.roomutil.http.HttpRequests;
 import com.nasinet.live.liveroom.roomutil.http.HttpResponse;
 import com.nasinet.live.model.entity.BaseLiveInfo;
 import com.nasinet.live.model.entity.Notify;
+import com.nasinet.live.util.StringUtil;
 import com.nasinet.live.widget.CommentContributionList;
 import com.nasinet.live.widget.CommentGuardianList;
 import com.nasinet.live.widget.CommentLiveBottomList;
@@ -144,7 +145,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
 
-import static android.graphics.BitmapFactory.decodeResource;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -1210,9 +1210,12 @@ public class LivePushActivity extends BaseMvpActivity<LivePushPresenter> impleme
         //
         mLivePusher.setVideoQuality(TXLiveConstants.VIDEO_QUALITY_HIGH_DEFINITION, false, false);
         mPresenter.getGuardianCount(startLive.getAnchorid());
+        StringUtil.log("获取的推流地址" + startLive.getPush_url().trim());
         int ret = mLivePusher.startPusher(startLive.getPush_url().trim());
+        StringUtil.log("code是" + ret);
         if (0 != ret) {
             ToastUtils.showT("推流失败");
+            StringUtil.log("");
             start_live_tv.setClickable(true);
             hideLoading();
             return;

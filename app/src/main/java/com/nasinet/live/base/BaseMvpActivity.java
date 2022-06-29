@@ -1,6 +1,5 @@
 package com.nasinet.live.base;
 
-
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.app.Dialog;

@@ -1,17 +1,16 @@
 package com.nasinet.live.ui.fragment;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpFragment;
@@ -22,13 +21,11 @@ import com.nasinet.live.model.entity.UserConfig;
 import com.nasinet.live.presenter.HomePresenter;
 import com.nasinet.live.ui.act.AllMessageActivity;
 import com.nasinet.live.ui.act.HomeActivity;
-import com.nasinet.live.ui.act.LivePushActivity;
 import com.nasinet.live.ui.act.SearchActivity;
 import com.nasinet.live.ui.adapter.TabFragmentAdapter;
 import com.nasinet.live.util.MyUserInstance;
-import com.nasinet.live.util.ToastUtils;
+import com.nasinet.live.util.StringUtil;
 import com.nasinet.live.widget.ScaleTransitionPagerTitleView;
-import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
@@ -68,6 +65,7 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
 
     @Override
     protected void initView(View view) {
+        StringUtil.log("hoomefrage");
         UserConfig userConfig = MyUserInstance.getInstance().getUserConfig();
         LiveCategory liveCategory = new LiveCategory();
         liveCategory.setTitle("热门");
@@ -107,11 +105,16 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
         mViewPager.setCurrentItem(0);// 设置当前显示标签页为第一页
 
 
+        StringUtil.log("woshezhl");
         ll_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                StringUtil.log("dial");
                 if (MyUserInstance.getInstance().visitorIsLogin()) {
+                    StringUtil.log("woa");
                     startActivity(new Intent(getActivity(), SearchActivity.class));
+                } else {
+                    StringUtil.log("haoba");
                 }
             }
         });

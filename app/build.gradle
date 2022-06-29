@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.mob.sdk'
 
-
-
 // mod分享SDK配置
 MobSDK {
     appKey ""
@@ -67,15 +65,15 @@ android {
 
     buildTypes {
         debug{
-            buildConfigField "String", "licenceURL", '""'
-            buildConfigField "String", "licenceKey", '""'
+            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1254145452_1/v_cube.license"'
+            buildConfigField "String", "licenceKey", '"66d91e3ce096191caf150951b5b46e76"'
             minifyEnabled false
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "licenceURL", '""'
-            buildConfigField "String", "licenceKey", '""'
+            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1254145452_1/v_cube.license"'
+            buildConfigField "String", "licenceKey", '"66d91e3ce096191caf150951b5b46e76"'
             //signingConfig signingConfigs.relesae
         }
     }

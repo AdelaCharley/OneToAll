@@ -8,6 +8,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -232,8 +233,8 @@
 
             </LinearLayout>
 
-
-            <android.support.v7.widget.Toolbar
+            <!--androidx.appcompat.widget.Toolbar-->
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 style="@style/ClubToolbar"
                 android:layout_width="match_parent"
@@ -282,7 +283,7 @@
                     </RelativeLayout>
 
                 </RelativeLayout>
-            </android.support.v7.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
 
             <ImageView
                 android:id="@+id/iv_close2"

@@ -4,8 +4,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import androidx.viewpager.widget.ViewPager;
 
-import androidx.viewpager.widget.ViewPager;
-
 import com.google.android.material.tabs.TabLayout;
 import com.nasinet.live.R;
 import com.nasinet.live.base.OthrBase2Activity;

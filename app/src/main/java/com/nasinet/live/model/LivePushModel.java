@@ -20,15 +20,13 @@ import com.nasinet.live.contract.LivePushContrat;
 import com.nasinet.live.model.entity.BaseLiveInfo;
 import com.nasinet.live.model.entity.BaseResponse;
 import com.nasinet.live.model.entity.ContributeRank;
-
 import com.nasinet.live.model.entity.GuardianInfo;
 import com.nasinet.live.model.entity.HotLive;
-import com.nasinet.live.model.entity.MLVBLoginResponse;
 import com.nasinet.live.model.entity.QCloudData;
-import com.nasinet.live.model.entity.StartLive;
 import com.nasinet.live.model.entity.UserRegist;
 import com.nasinet.live.net.RetrofitClient;
 import com.tencent.liteav.demo.play.bean.GiftData;
+
 import java.util.ArrayList;
 
 import io.reactivex.Flowable;

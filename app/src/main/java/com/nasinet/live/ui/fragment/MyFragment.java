@@ -38,7 +38,6 @@ import com.nasinet.live.ui.act.RoomManagerActivity;
 import com.nasinet.live.ui.act.SettingActivity;
 import com.nasinet.live.ui.act.ToPayActivity;
 import com.nasinet.live.ui.act.WebShopActivity;
-import com.nasinet.live.ui.act.WebViewActivity;
 import com.nasinet.live.util.MyUserInstance;
 import com.nasinet.live.util.WordUtil;
 import com.nasinet.nasinet.utils.AppManager;

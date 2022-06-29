@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.google.gson.Gson;
 import com.nasinet.live.R;
 import com.nasinet.live.base.BaseMvpFragment;
 import com.nasinet.live.contract.HomeContract;
@@ -554,6 +555,8 @@ public class HotFragment extends BaseMvpFragment<HomePresenter> implements HomeC
                     startActivity(new Intent(getContext(), SuperPlayerActivity.class).putExtra("studio_info", live));
                 } else {
 
+                    Gson gson = new Gson();
+                    StringUtil.log(gson.toJson(live.getAnchor()));
 
                     startActivity(new Intent(getContext(), SuperPlayerVerticalActivity.class).putExtra("studio_info", live.getAnchor()));
                 }

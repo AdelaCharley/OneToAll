@@ -87,7 +87,7 @@
             </RelativeLayout>
 
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 style="@style/ClubToolbar"
                 android:layout_width="match_parent"
@@ -136,7 +136,7 @@
                     </RelativeLayout>
 
                 </RelativeLayout>
-            </android.support.v7.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
 
 
             <RelativeLayout

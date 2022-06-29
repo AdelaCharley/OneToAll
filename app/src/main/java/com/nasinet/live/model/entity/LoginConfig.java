@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class LoginConfig implements Serializable {
     private String qcloud_appid;
-    private int im_sdkappid = 1400699457;
+    private int im_sdkappid = 1400691368;//1400691368
     private String cos_bucket;
     private String cos_region;
     private String wx_appid;

@@ -320,6 +320,7 @@ public class SuperPlayerView extends RelativeLayout implements ITXVodPlayListene
         SuperPlayerModelWrapper modelWrapper = new SuperPlayerModelWrapper(modelV3);
         mCurrentModelWrapper = modelWrapper;
         if (modelV3.videoId != null) { // 根据FileId播放
+            Log.i("equnshanglogtool","videoId");
             SuperVodInfoLoaderV3 v3Loader = new SuperVodInfoLoaderV3();
             v3Loader.getVodByFileId(modelWrapper, new SuperVodInfoLoaderV3.OnVodInfoLoadListener() {
 
@@ -365,6 +366,7 @@ public class SuperPlayerView extends RelativeLayout implements ITXVodPlayListene
                 }
             });
         } else {
+            Log.i("equnshanglogtool","caole");
             stopPlay();
             initLivePlayer(getContext());
             initVodPlayer(getContext());
@@ -1451,6 +1453,7 @@ public class SuperPlayerView extends RelativeLayout implements ITXVodPlayListene
      */
     @Override
     public void onPlayEvent(TXVodPlayer player, int event, Bundle param) {
+        Log.i("equnshanglogtool","youshijianle");
         if (event != TXLiveConstants.PLAY_EVT_PLAY_PROGRESS) {
             String playEventLog = "TXVodPlayer onPlayEvent event: " + event + ", " + param.getString(TXLiveConstants.EVT_DESCRIPTION);
             TXCLog.d(TAG, playEventLog);

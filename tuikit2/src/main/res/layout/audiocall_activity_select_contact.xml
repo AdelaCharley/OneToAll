@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.tencent.liteav.SelectContactActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
@@ -40,7 +40,7 @@
             android:text="完成"
             android:textColor="@color/colorWhite"
             android:textSize="16sp" />
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
