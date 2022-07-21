@@ -1,6 +1,6 @@
 include ':glide',  ':tiui'
 rootProject.name='OneToAll'
-include ':app', ':ucrop', ':picture_library'
+include ':nasiliveapp', ':ucrop', ':picture_library'
 include ':LiteAVSDK_Professional'
 
 include ':beauty'

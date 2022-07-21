@@ -8,8 +8,6 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -19,22 +17,18 @@ import android.view.animation.LinearInterpolator;
 import android.widget.MediaController;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.transition.Transition;
 import com.nasinet.live.R;
 import com.nasinet.live.base.Constants;
 import com.nasinet.live.interfaces.CommonCallback;
-import com.nasinet.nasinet.base.AbsViewHolder;
 import com.nasinet.live.model.entity.ChatReceiveGiftBean;
 import com.nasinet.live.util.DpUtil;
 import com.nasinet.live.util.GifCacheUtil;
+import com.nasinet.nasinet.base.AbsViewHolder;
 import com.opensource.svgaplayer.SVGACallback;
 import com.opensource.svgaplayer.SVGAImageView;
 import com.opensource.svgaplayer.SVGAParser;
 import com.opensource.svgaplayer.SVGAVideoEntity;
 import com.opensource.svgaplayer.utils.SVGARect;
-
 
 import org.jetbrains.annotations.NotNull;
 

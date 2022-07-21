@@ -78,7 +78,6 @@
             android:layout_marginRight="@dimen/dp_30"
             android:orientation="horizontal">
 
-
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

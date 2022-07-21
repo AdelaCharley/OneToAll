@@ -47,7 +47,6 @@ public class HttpRequests {
 
     public HttpRequests(String domain) {
         this.domain = domain;
-
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor(new HttpInteraptorLog());
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 

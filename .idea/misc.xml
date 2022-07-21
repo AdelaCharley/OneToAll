@@ -51,6 +51,8 @@
         <entry key="..\:/MyWork/nasinet-live-android/lib_tcsuperplayer/src/main/res/layout/vod_controller_large.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/lib_tcsuperplayer/src/main/res/layout/vod_controller_small.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/nasiliveapp/src/main/res/layout/activity_live_push.xml" value="0.5" />
+        <entry key="..\:/MyWork/nasinet-live-android/nasiliveapp/src/main/res/layout/view_common_gift.xml" value="0.5541666666666667" />
+        <entry key="..\:/MyWork/nasinet-live-android/nasinet/src/main/res/layout/item_broadcast_all_gift.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tiui/src/main/res/layout/fragment_ti_recyclerview.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tiui/src/main/res/layout/fragment_ti_sticker.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tiui/src/main/res/layout/item_ti_des.xml" value="0.5541666666666667" />
@@ -65,9 +67,12 @@
         <entry key="..\:/MyWork/nasinet-live-android/tiui/src/main/res/layout/layout_ti_panel.xml" value="0.221875" />
         <entry key="..\:/MyWork/nasinet-live-android/tiui/src/main/res/layout/view_ti_mode_page_1.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tiui/src/main/res/layout/view_ti_mode_page_2.xml" value="0.5541666666666667" />
+        <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/drawable/action_audio_selector.xml" value="0.406" />
+        <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/drawable/action_face_selector.xml" value="0.406" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/activity_camera.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/activity_photo_view.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/activity_video_view.xml" value="0.5541666666666667" />
+        <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/audiocall_activity_call_history.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/audiocall_item_select_contact.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/audiocall_item_selected_contact.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/audiocall_item_user_layout.xml" value="0.5541666666666667" />
@@ -82,6 +87,8 @@
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/contact_list.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/contact_selecable_adapter_item.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/conversation_custom_adapter.xml" value="0.5541666666666667" />
+        <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/system_message_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/MyWork/nasinet-live-android/tuikit2/src/main/res/layout/title_bar_layout2.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/ucrop/src/main/res/layout/ucrop_activity_photobox.xml" value="0.221875" />
         <entry key="..\:/MyWork/nasinet-live-android/ucrop/src/main/res/layout/ucrop_aspect_ratio.xml" value="0.5541666666666667" />
         <entry key="..\:/MyWork/nasinet-live-android/ucrop/src/main/res/layout/ucrop_controls.xml" value="0.5541666666666667" />
