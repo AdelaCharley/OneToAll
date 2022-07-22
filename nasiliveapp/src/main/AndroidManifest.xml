@@ -31,7 +31,7 @@ package="com.nasinet.live">
 
     <activity
         android:name="com.nasinet.live.ui.act.HomeActivity"
-        android:theme="@style/AppTheme2"
+        android:theme="@style/AppTheme2" android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize">
 
@@ -39,6 +39,7 @@ package="com.nasinet.live">
     <activity
         android:name="com.nasinet.live.ui.act.SplashActivity"
         android:theme="@style/MySplashTheme"
+        android:exported="true"
         android:screenOrientation="portrait"
 
         android:configChanges="orientation|keyboardHidden|screenSize">
@@ -54,7 +55,7 @@ package="com.nasinet.live">
         android:name="com.nasinet.live.ui.act.TestActivity"
         android:theme="@style/AppTheme2"
         android:screenOrientation="portrait"
-        android:launchMode="singleTop"
+        android:launchMode="singleTop" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize">
 <!--        <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -65,32 +66,32 @@ package="com.nasinet.live">
 
     <activity
         android:name="com.nasinet.live.ui.act.MyLevelActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.ChatActivity"
         android:windowSoftInputMode="adjustPan|stateHidden"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize">
 
     </activity>
 
     <activity
         android:name="com.nasinet.live.ui.act.PublishTrendActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize">
 
     </activity>
     <activity
         android:name="com.nasinet.live.ui.act.PhotoWallActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize">
 
     </activity>
 
     <activity
         android:name="com.nasinet.live.ui.act.LiveManageActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize">
 
     </activity>
@@ -98,93 +99,105 @@ package="com.nasinet.live">
 
     <activity
         android:name="com.nasinet.live.ui.act.WebViewActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.WebShopActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.CollectActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.MyShortVideoActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.MyTrendActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.UserTrendsActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.ReplayTrendActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.LoginActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.InviteHistoryActivity"
-        android:screenOrientation="portrait"
+        android:screenOrientation="portrait" android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.IncomeAgentActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.InviteHistoryAgentActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.ReportItemActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
+
+
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.SearchActivity"
         android:windowSoftInputMode="stateVisible|adjustResize"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.ReportActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.RegisterAndPasswordActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.PhoneLoginActivity"
         android:windowSoftInputMode="stateVisible|adjustResize"
         android:theme="@style/AppTheme3"
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.SettingActivity"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme3"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.BuyMemberActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.InviteFriendActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
@@ -215,118 +228,138 @@ package="com.nasinet.live">
 
     <activity
         android:name="com.nasinet.live.video.TCVideoEditerActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoEffectActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoPublisherActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoRecordActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
 
     <activity
         android:name="com.nasinet.live.video.TCPictureJoinActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCPicturePickerActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCTripleRecordVideoPickerActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoCutActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoFollowRecordActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoTripleScreenActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoJoinerActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.video.TCVideoPickerActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.ShortVideoPublishActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.VideoPlayActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.MyWalletActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.CashOutHistoryActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.WalletManagerActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.MyIncomeActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.BindPhoneActivity"
         android:screenOrientation="portrait"
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.MySettingActivity"
         android:screenOrientation="portrait"
-
+        android:exported="false"
         android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
+        android:exported="false"
         android:name="com.nasinet.live.ui.act.ApplyAnchorActivity"
         android:windowSoftInputMode="stateVisible|adjustResize"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.RoomManagerActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
+        android:exported="false"
         android:name="com.nasinet.live.ui.act.LivePushActivity"
         android:theme="@style/AppTheme2"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity
+    <activity android:exported="false"
         android:name="com.nasinet.live.ui.act.ToPayActivity"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity
+    <activity android:exported="false"
         android:name="com.nasinet.live.ui.act.AllMessageActivity"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.FollowActivity"
-
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"
         android:launchMode="singleTask"
         android:screenOrientation="portrait"/>
@@ -336,14 +369,14 @@ package="com.nasinet.live">
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"
         android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
-
+        android:exported="false"
         />
 
     <activity
         android:name="com.nasinet.live.ui.act.SuperPlayerVerticalActivity"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"
-
+        android:exported="false"
         />
 
     <activity
@@ -356,7 +389,6 @@ package="com.nasinet.live">
 
     <activity
         android:name="com.alipay.sdk.app.H5AuthActivity"
-
         android:exported="false"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="adjustResize|stateHidden">
@@ -364,61 +396,61 @@ package="com.nasinet.live">
 
     <activity
         android:name="com.nasinet.live.ui.act.SystemMessageActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity
         android:name="com.nasinet.live.ui.act.IntimacyListActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.ShortVideoCenterActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"
      />
     <activity
         android:name="com.nasinet.live.ui.act.UserShortVideoActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"
        />
     <activity
         android:name="com.nasinet.live.ui.act.AnchorCenterActivity"
-
+        android:exported="false"
         android:screenOrientation="portrait"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
     <activity
         android:name="com.nasinet.live.ui.act.PhotoInfoActivity"
         android:screenOrientation="portrait"
-
+        android:exported="false"
         android:configChanges="orientation|keyboardHidden|screenSize"/>
 
 
   <activity
       android:name="com.nasinet.live.ui.act.SearchTalkActivity"
       android:screenOrientation="portrait"
-
+      android:exported="false"
       android:configChanges="orientation|keyboardHidden|screenSize"/>
 
   <activity
       android:name="com.nasinet.live.ui.act.UserRankActivity"
-
+      android:exported="false"
       android:screenOrientation="portrait"
       android:configChanges="orientation|keyboardHidden|screenSize"/>
 
 
   <activity
       android:name="com.nasinet.live.ui.act.TopicShortVideoActivity"
-
+      android:exported="false"
       android:screenOrientation="portrait"
       android:configChanges="orientation|keyboardHidden|screenSize"/>
   <activity
       android:name="com.nasinet.live.ui.act.TopicMomentVideoActivity"
-
+android:exported="false"
       android:screenOrientation="portrait"
       android:configChanges="orientation|keyboardHidden|screenSize"/>
 

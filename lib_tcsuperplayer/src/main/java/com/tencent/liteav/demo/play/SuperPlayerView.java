@@ -407,6 +407,7 @@ public class SuperPlayerView extends RelativeLayout implements ITXVodPlayListene
                 mReportVodStartTime = System.currentTimeMillis();
                 mVodPlayer.setPlayerView(mTXCloudVideoView);
                 mVodPlayer.setToken(modelWrapper.requestModel.token);
+                Log.i("equnshanglogtool","fdfdfd");
                 playVodURL(videoURL);
             }
             boolean isLivePlay = (isRTMPPlay(videoURL) || isFLVPlay(videoURL));

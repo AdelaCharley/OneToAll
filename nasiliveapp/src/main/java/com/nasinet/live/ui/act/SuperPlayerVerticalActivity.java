@@ -391,8 +391,8 @@ public class SuperPlayerVerticalActivity extends BaseMvpActivity<SuperPlayerPres
                 //填充播放参数
                 SuperPlayerModel model = new SuperPlayerModel();
                 model.url =
-                        //"https://1300631461.vod2.myqcloud.com/91d46a3bvodcq1300631461/f8d317b25285890811306189847/7bd8s1HplVkA.mp4";
-                        hotLive.getPull_url();
+                        "https://1300631461.vod2.myqcloud.com/91d46a3bvodcq1300631461/f8d317b25285890811306189847/7bd8s1HplVkA.mp4";
+                        //hotLive.getPull_url();
                 StringUtil.log("address   " + hotLive.getPull_url());
                 model.title = hotLive.getTitle();
                 spv_main.playWithModel(model);

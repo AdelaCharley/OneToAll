@@ -6,9 +6,13 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            allowInsecureProtocol = true
+            url 'http://mvn.mob.com/android' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.android.tools.build:gradle:7.0.1'
+        //classpath 'com.android.tools.build:gradle:3.6.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.mob.sdk:MobSDK:2018.0319.1724"
         // NOTE: Do not place your application dependencies here; they belong
@@ -20,7 +24,12 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://jitpack.io" }
+        maven {
+            allowInsecureProtocol = true
+            url "https://jitpack.io" }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://mvn.mob.com/android' }
         flatDir {
             dirs 'libs'
             dirs project(':nasiliveapp').file('libs')

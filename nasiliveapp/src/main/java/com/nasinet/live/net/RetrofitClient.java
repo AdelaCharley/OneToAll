@@ -91,7 +91,7 @@ public class RetrofitClient {
                 .readTimeout(20, TimeUnit.SECONDS)
                 //设置拦截器
                 .addInterceptor(getInterceptor())
-                .sslSocketFactory(SSLSocketClient.getSSLSocketFactory())
+                //.sslSocketFactory(SSLSocketClient.getSSLSocketFactory())
                 .hostnameVerifier(SSLSocketClient.getHostnameVerifier())
                 .build();
 

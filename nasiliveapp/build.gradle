@@ -65,15 +65,15 @@ android {
 
     buildTypes {
         debug{
-            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1254145452_1/v_cube.license"'
-            buildConfigField "String", "licenceKey", '"66d91e3ce096191caf150951b5b46e76"'
+            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1305049841_1/v_cube.license"'
+            buildConfigField "String", "licenceKey", '"81ad799138554f6b8e5ef7c9e237464c"'
             minifyEnabled false
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1254145452_1/v_cube.license"'
-            buildConfigField "String", "licenceKey", '"66d91e3ce096191caf150951b5b46e76"'
+            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1305049841_1/v_cube.license"'
+            buildConfigField "String", "licenceKey", '"81ad799138554f6b8e5ef7c9e237464c"'
             //signingConfig signingConfigs.relesae
         }
     }
@@ -88,7 +88,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     // 导入腾讯云短视频SDK jar
     implementation fileTree(dir: 'src/main/jniLibs', includes: ['*.jar'])
  //   implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -117,8 +117,8 @@ dependencies {
 
 
 //okhttp3
-    implementation 'com.squareup.okhttp3:okhttp:3.12.5'
-    implementation "com.squareup.okhttp3:logging-interceptor:3.12.5"
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
     implementation 'com.squareup.okio:okio:2.2.1'
 //retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
@@ -206,7 +206,7 @@ dependencies {
     implementation 'com.github.lzyzsd:jsbridge:1.0.4'
     implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
     implementation files('libs\\alipaySdk-15.7.9-20200727142846.aar')
-    compile  project(path: ':nasinet')
+    implementation  project(path: ':nasinet')
     implementation 'com.example.zhouwei.library:library:1.0.0'
 
     api 'com.uber.autodispose:autodispose:0.7.0'
@@ -218,6 +218,11 @@ dependencies {
 
     implementation 'com.zyp.cardview:cardview:1.0.1'
     implementation files('libs\\tbs_sdk_thirdapp_v4.3.0.39_43939_sharewithdownloadwithfile_withoutGame_obfs_20200713_223411.jar')
+
+
+    implementation ('com.tencent.qcloud:cosxml:5.5.3') {
+        exclude group: 'com.tencent.qcloud', module: 'mtaUtils' //关闭 mta 上报功能}////这个玩意是怎么冒出来的，我不知道
+    }
 
 
 }

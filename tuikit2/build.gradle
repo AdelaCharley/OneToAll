@@ -30,7 +30,9 @@ android {
         flatDir {
             dirs 'libs'
         }
-        maven { url "http://maven.oa.com/nexus/content/groups/androidbuild"}
+        maven {
+            allowInsecureProtocol = true
+            url "http://maven.oa.com/nexus/content/groups/androidbuild"}
     }
 
 }
