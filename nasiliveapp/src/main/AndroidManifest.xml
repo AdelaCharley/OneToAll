@@ -50,7 +50,12 @@ package="com.nasinet.live">
         </intent-filter>
     </activity>
 
-
+    <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="${applicationId}.messenger" />
+        </intent-filter>
+    </service>
     <activity
         android:name="com.nasinet.live.ui.act.TestActivity"
         android:theme="@style/AppTheme2"
